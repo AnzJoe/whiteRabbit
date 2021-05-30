@@ -1,0 +1,13 @@
+{
+  "name": "Movie-app",
+  "displayName": "Movie-app",
+  "expo": {
+    "name": "Restaurant-app",
+    "slug": "restaurant-app",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "description": ""
+  }
+}

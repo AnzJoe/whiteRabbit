@@ -1,0 +1,29 @@
+{
+    "serverError": {
+      "defaultError": "Unable to perform the action",
+      "internalServerError": "Something went wrong with the server",
+      "unauthorized": "Unauthorized access",
+      "forbidden": "Forbidden"
+    },
+    "dashboard": {
+      "title": "Employee Finder",
+      "noData": "No data found"
+    },
+    "search": {
+      "searchPlaceholder": "Search by name or email",
+      "search": "Search"
+    },
+    "detail": {
+      "title": "Movie Buzz",
+      "rating": "Rating:",
+      "role": "Role:",
+      "catchPhrase": "Catchphrase:",
+      "city": "City:",
+      "street": "Street:",
+      "zipcode": "Zipcode:",
+      "phone": "Phone:",
+      "email": "Email:",
+      "desc": "Description:",
+      "descText" : "Are you looking for High Quality and Innovative IT Services and Solutions? We are Empowering Customers through Technology. Please connect and start discussions with me.\nExperienced Director with a demonstrated history of working in the information technology and services industry.\nSkilled in International Relations, Global Delivery, Team Management, Operations and Administration in Global IT companies.\nLarge experience in managing projects in WEB & Portals Development, Front-end, Back-end, Mobility, iOS, Android and Hybrid Mobile Apps, IoT, and Chatbot.\nProvide specialized services in Java, PHP, Ruby, J2EE, Liferay, Drupal, CRM, SugarCRM, Joomla, WordPress, Magento, Python, Django, Ruby on Rail, HTML5, CSS, Bootstrap, Javascript, Angular.JS, React.JS, Node.JS, React.JS, Vue.JS, Flutter, Mobile, Android, Kotlin, React, iOS, Objective-C and Swift .\nStrong professional with a Master of Science (MSc) focused in Computer Science."
+    }
+  }
