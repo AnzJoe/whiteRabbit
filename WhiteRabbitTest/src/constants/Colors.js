@@ -1,8 +1,3 @@
-const tintColorLight = "#FF6B6B";
-const tintColorDark = "#fff";
-export const primaryColor = "#FF6B6B";
-export const primaryDarkColor = "#EF5452";
-export const primaryLightColor = "#FF7C7C";
 export const windowBackground = "#fff";
 export const windowBackgroundGrey = "#F2F2F2";
 export const white = "#fff";
@@ -19,44 +14,10 @@ export const cellBackground = '#F1F3F6'
 export default {
   light: {
     text: "#000",
-    background: "#fff",
-    tint: tintColorLight,
-    tabIconDefault: "#fff",
-    tabIconSelected: tintColorLight,
-    inactiveBackgroundColor: primaryDarkColor,
-    activeBackgroundColor: white,
-    activeTintColor: "#522360",
-    inactiveTintColor: "#A1A1A1",
-    tabStyle: {
-      paddingVertical: 3,
-    },
-    labelStyle: {
-      fontFamily: "bold",
-      fontSize: 10,
-    },
-    style: {
-      // height: 56,
-    },
+    background: "#fff"
   },
   dark: {
     text: "#fff",
-    background: "#000",
-    tint: tintColorLight,
-    tabIconDefault: "#fff",
-    tabIconSelected: tintColorLight,
-    inactiveBackgroundColor: primaryDarkColor,
-    activeBackgroundColor: white,
-    activeTintColor: "#A1A1A1",
-    inactiveTintColor: "#522360",
-    tabStyle: {
-      paddingVertical: 3,
-    },
-    labelStyle: {
-      fontFamily: "bold",
-      fontSize: 10,
-    },
-    style: {
-      height: 56,
-    },
+    background: "#000"
   },
 };

@@ -8,34 +8,34 @@ import {
 import { connect } from "react-redux";
 
 import {
-  fetchDashboardSectionOneDataIfNeeded,
+  fetchDashboardEmployeeDataIfNeeded,
 } from "action/dashboardAction";
 import { string } from "assets/strings";
 import {
   white,
   blackColor
 } from "constants/Colors";
-import { Section } from "./Section";
+import { EmployeeList } from "./EmployeeList";
 import SearchBar from "./SearchBar"
 
 function Dashboard({
   dispatch,
   navigation,
-  isSectionOneFetching,
-  sectionOneArray
+  isEmployeeFetching,
+  employeeArray
 }) {
   const insets = useSafeAreaInsets();
   const [searchText, setSearchText] = useState("");
   const [searchArray, setSearchArray] = useState([]);
   const topValue = insets.top + 100
   useEffect(() => {
-    dispatch(fetchDashboardSectionOneDataIfNeeded());
+    dispatch(fetchDashboardEmployeeDataIfNeeded());
   }, []);
 
   function setSearchingData(text) {
     setSearchText(text)
     if (!!text) {
-      const filteredArray = sectionOneArray.filter((item) => (item?.name.toLowerCase()).includes(text.toLowerCase()) || (item?.email.toLowerCase()).includes(text.toLowerCase()))
+      const filteredArray = employeeArray.filter((item) => (item?.name.toLowerCase()).includes(text.toLowerCase()) || (item?.email.toLowerCase()).includes(text.toLowerCase()))
       setSearchArray(filteredArray)
     } else {
       setSearchArray([])
@@ -55,15 +55,15 @@ function Dashboard({
       <SearchBar
         searchText={searchText}
         setSearchText={setSearchingData}
-        isFetching={isSectionOneFetching}
+        isFetching={isEmployeeFetching}
         searchArray={searchArray}
         onPress={searchDataOnPress}
         topValue={topValue}
       />
-      <Section
-        array={sectionOneArray}
+      <EmployeeList
+        array={employeeArray}
         navigation={navigation}
-        isFetching={isSectionOneFetching} />
+        isFetching={isEmployeeFetching} />
     </View>
 
   );
@@ -88,12 +88,12 @@ const styles = StyleSheet.create({
 function mapStateToProps(state) {
   const { dashboardReducer } = state;
   const {
-    isSectionOneFetching,
-    sectionOneArray
+    isEmployeeFetching,
+    employeeArray
   } = dashboardReducer;
   return {
-    isSectionOneFetching,
-    sectionOneArray
+    isEmployeeFetching,
+    employeeArray
   };
 }
 export default connect(mapStateToProps)(Dashboard);

@@ -1,6 +1,6 @@
 import Constants from 'expo-constants';
 
-export const prodUrl = "http://www.mocky.io/";  // amazonaws url
+export const prodUrl = "http://www.mocky.io/";  // backend url
 const ENV = {
   dev: {
     apiUrl: prodUrl,

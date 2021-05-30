@@ -11,7 +11,7 @@ import {
     blackColor
 } from "constants/Colors";
 import CellItem from '../CellItem'
-export function Section({ array, navigation, isFetching }) {
+export function EmployeeList({ array, navigation, isFetching }) {
 
     function renderItem({ item }) {
         return (

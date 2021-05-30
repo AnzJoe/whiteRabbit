@@ -37,16 +37,4 @@ export default class Service {
       return this.handleParseError(error);
     }
   }
-  async getImagesData() {
-    try {
-      const data = await this.api.get(`noodlesec253ad.json`);
-      if (data.status == 200) {
-        return data?.data;
-      } else {
-        return this.handleParseError({ message: data.data, code: data.status });
-      }
-    } catch (error) {
-      return this.handleParseError(error);
-    }
-  }
 }

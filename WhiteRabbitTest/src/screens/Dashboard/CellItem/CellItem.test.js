@@ -6,8 +6,9 @@ import CellItem from "./CellItem";
 
 
 describe('<CellItem/>', () => {
+  const company = {name: "whiteRabbit"}
   const props = {
-    data: {Year:'2013', Poster:'https://homepages.cae.wisc.edu/~ece533/images/airplane.png'},
+    data: {company: company, name:'Anz', profile_image:'https://randomuser.me/api/portraits/men/1.jpg'},
     onPress: jest.fn
   };
 
