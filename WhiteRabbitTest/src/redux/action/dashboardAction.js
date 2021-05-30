@@ -36,7 +36,7 @@ function shouldFetchDashboardEmployeeData(state) {
   const dashboardData = state.dashboardReducer;
   if (!dashboardData) {
     return true;
-  } else if (dashboardData.isEmployeeFetching) {
+  } else if (dashboardData.isEmployeeFetching || dashboardData.employeeArray.length != 0) {
     return false;
   } else {
     return true;
